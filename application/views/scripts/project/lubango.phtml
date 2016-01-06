@@ -1,0 +1,22 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Lubango Master Plan');?></p>
+            <p class="bold"><?=$this->translate('2003');?></p>
+            <p><?=$this->translate('Client: Huíla Province Government, Angola (CNS)');?></p>
+            <p><?=$this->translate('Designing the master plan for the Lubango city was one of the richest experiences ever. In a place like Angola, one can never think the work is simply intellectual, it requires all our effort and energy and the simplest things. What we do, the way we work is what we teach and what we leave. It´s very simple, everything counts. Photographing the museum collection, preparing an exhibition about the past, the present and the future of the city made part of this experience in Africa.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("lubango");
+        $gal->setImages(array(
+            "caras.jpg","dscf0008.jpg","eumbo.jpg","fotos_pdm.jpg","humpata_18.jpg","jornal.jpg", "mapa_mundo.jpg", "museu.jpg", "pdm_angola-mapa.png", "pdm_angola-patrimonio.png","pdm_angola-sintese.png", "praca.jpg", "site_urbanismo_pdm angola-Model.png"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>
+

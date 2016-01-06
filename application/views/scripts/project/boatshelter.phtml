@@ -1,0 +1,29 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Boat shelter');?></p>
+            <p class="bold"><?=$this->translate('2009');?></p>
+            <p><?=$this->translate('Client: CAM - Macau International Airport Company');?></p>
+            <p><?=$this->translate('Status: pending');?></p>
+            <p><?=$this->translate('Over a concrete portico we built what seems to be a house.');?></p>
+            <?=$this->back();?>
+
+            <img src="/projects/boatshelter/imagens/blankmap-world_small.png" alt="blankmap-world_smalll" width="250px" style="padding-top: 15px">
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("boatshelter");
+        $gal->setImages(array(
+            "conjunto","corte_alcado","foto aerea_PB","foto_aerea_PB","implantacao"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>
+
+
+
+
+

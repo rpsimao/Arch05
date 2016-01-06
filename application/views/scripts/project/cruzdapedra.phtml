@@ -1,0 +1,24 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Cruz da pedra');?></p>
+            <p class="bold"><?=$this->translate('2005-2011');?></p>
+            <p><?=$this->translate('Client: Private');?></p>
+            <p><?=$this->translate('Status: pending');?></p>
+            <p><?=$this->translate('Credits: Pedro Sempiterno, Architect');?></p>
+            <p><?=$this->translate('The main body of the building dates from the XV century, but it suffered many changes through the years. This new program required 13 apartments in order to be economically viable. So a new building is added to the existent. The program also asked for parking and a swimming pool, so the result it’s more or less like a private condominium.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("palacete");
+        $gal->setImages(array(
+            "palacete_pb","imp","planta","corte","alcado","3.JPG","4.JPG","5.JPG","6","7.JPG","8.JPG","9","10.JPG","11.JPG","12.JPG","13.JPG","14.JPG"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>
+

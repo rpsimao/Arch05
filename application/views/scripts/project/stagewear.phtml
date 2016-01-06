@@ -1,0 +1,30 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Atom size Stagewear');?></p>
+            <p class="bold"><?=$this->translate('2008');?></p>
+            <p><?=$this->translate('Credits:Daniela Castel-Branco, Alexandra Varela, Heitor Alves');?></p>
+            <p><?=$this->translate('The pattern uses as inspiration typefaces and calligraphy. In this particular case the first letter of the western alphabet. The fabric was firstly conceived as part of my graduation project. Aware of my fashion background the Atom size singer ask me to design “something she could wear on stage” during the band concert/performances. The Stagewear it is an opportunity to recycle thoughts, a bit in the band improvisation mood. It’s composed by two pieces: First the necklace as wearable as any piece of cloth and second a new use for a t-shirt. The result it’s up-side-down wear. A T-shirt transformed into a XL baggy shorts.');?></p>
+            <?=$this->back();?>
+            <p><iframe title="YouTube video player" class="youtube-player" type="text/html"
+                       width="260" height="180" src="http://www.youtube.com/embed/obeUEIyKF8U"
+                       frameborder="0" allowFullScreen></iframe></p>
+            <p><iframe title="YouTube video player" class="youtube-player" type="text/html"
+                       width="260" height="180" src="http://www.youtube.com/embed/k0zbOcOEu6I"
+                       frameborder="0" allowFullScreen></iframe></p>
+            <p><iframe title="YouTube video player" class="youtube-player" type="text/html"
+                       width="260" height="180" src="http://www.youtube.com/embed/YNxRjb1IGA8"
+                       frameborder="0" allowFullScreen></iframe></p>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("stagewear");
+        $gal->setImages(array(
+            "1_colar","2_colar","3_colar","4_colar","5_colar"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

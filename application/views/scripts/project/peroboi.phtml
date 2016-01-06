@@ -1,0 +1,25 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Pero Boi House');?></p>
+            <p class="bold"><?=$this->translate('2004-2011');?></p>
+            <p><?=$this->translate('Client: Private');?></p>
+            <p><?=$this->translate('House in Castelo de Vide, Portugal');?></p>
+            <p><?=$this->translate('The idea was to build a house that allowed living mainly on the ground floor, while the upper floor could be rented. So the house is composed of two separate levels, communicating by stairs, which can be closed, therefore separating the two worlds. The rotation of the upper plan is ideal for solar panels, which is expressed on the roof fall. All rooms including the bathroom open onto the field, allowing everyone to be independent and the outside to merge with the inside. There was an existing derelict building on site from which the new build borrows the footprint and the stone for the walls. Within the estate there was also build a detached multipurpose small studio.');?></p>
+            <?=$this->back();?>
+            <img src="/projects/peroboi/imagens/site_habitacao_pero-boi-Model.jpg" alt="site_habitacao_pero-boi-Model" width="250px" style="padding-top: 15px">
+        </div>
+
+        <?php
+
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("peroboi");
+        $gal->setImages(array(
+            "img_7036","img_7466","img_7458","img_7460","img_9402_site","img_9412_site","img_7422_site","img_7392","img_7450","img_7402_site","site_habitacao_pero-boi-planta_0","site_habitacao_pero-boi-planta_1","estudio_5","estudio_4","estudio_2","estudio_1","estudio_3"
+        ));
+        echo $gal->renderGallery();
+        ?>
+
+    </div>
+
+</div>

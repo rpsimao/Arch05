@@ -1,0 +1,23 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('The importance of Informality, learning from Africa. [A Comparative study between Informal settlements and Vinex-districts]');?></p>
+            <p class="bold"><?=$this->translate('2011');?></p>
+            <p><?=$this->translate('Location: Angola, Netherlands');?></p>
+            <p><?=$this->translate('Credits: Futurecycles');?></p>
+            <p><?=$this->translate('Status: Granted by the Stimuleringsfonds voor');?></p>
+            <p><?=$this->translate('Futurecycles see informal actions as an opportunity to think globally and to examine urban manifestations which are detached from architecture or urbanism practices. We believe that a research on the unplanned cities will launch clues opposed to urban social pathologies, which can also be found in the planned cities. Once we analyze these informal actions with no prejudgments or presumptions, we hope to unveil a sustainable approach to new urbanity. The intention is to develop a research based on the inherent qualities of informality that can be found in all human settlements, as a universal value.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("informality");
+        $gal->setImages(array(
+            "1_crossphoto","2_concept","3_section_nl","3_section_nl_1","4_section","4_section_1"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

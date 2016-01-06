@@ -1,0 +1,25 @@
+
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Refurbishment of a Span house in Blackheath, London');?></p>
+            <p class="bold"><?=$this->translate('built 1968');?></p>
+            <p><?=$this->translate('Client: private');?></p>
+            <p><?=$this->translate('status: ongoing');?></p>
+            <p><?=$this->translate('This house belongs to a group of 19 which form Parkend, a Span estate in Blackheath, London. Span estates are residential developments build between the 50s and the 80s across the UK, by a company formed by developers (Geoffrey Townsend and Leslie Bilsby), an architect (Eric Lyons) and a landscape architect (Ivor Cunningham). Set in a suburban area where communal gardens help to create a sense of community, Parkend was originally built in 1967. This house has an ongoing refurbishment plan that includes new hardwood windows with double glazing, in adapted replica of the original design, hardwood external cladding with insulation and roof coverings with added insulation. Apart from the upgraded replica elements, some parts of the project are new additions, as the integrity of the original was lost: entrance door panel and hallway, bathroom, kitchen, bespoke integrated storage units and a new garden design.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("span_house");
+        $gal->setImages(array(
+            "span_01.jpg","Span_02.JPG","span_03.JPG","span_04.JPG","span_05.JPG","span_06.JPG","span_07.JPG","span_08.JPG","span_09.JPG","span_10.JPG","span_11.JPG"
+        ));
+        echo $gal->renderGallery();
+        ?>
+
+    </div>
+
+</div>
+

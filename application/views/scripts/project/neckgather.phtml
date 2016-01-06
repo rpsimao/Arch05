@@ -1,0 +1,23 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Neck Gather');?></p>
+            <p class="bold"><?=$this->translate('2010');?></p>
+            <p><?=$this->translate('Acessory Design and Handcraft');?></p>
+            <p><?=$this->translate('Competition: Unlimited Design Competition 2010 http://unlimiteddesigncontest.org/en/product/neck-gather');?></p>
+            <p><?=$this->translate('Credits: Catherine Drieux, Fablab Amsterdam');?></p>
+            <p><?=$this->translate('The idea gathers two distinct materials in a neck accessory. A Laser cutted plexiglas front and a crochet silk back assembled together. Surprisingly, the contrast between the applied techniques enhances the body anatomy. The front is flat and the back softly surrounds the neck.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("neck_gather");
+        $gal->setImages(array(
+            "1_colar_azul","2_colar_azul","3_colar_azul","4_colar_azul","5_colar_azul"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

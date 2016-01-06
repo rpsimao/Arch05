@@ -1,0 +1,21 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Forum Consultants Ltd. Office, Macau');?></p>
+            <p class="bold"><?=$this->translate('2010');?></p>
+            <p><?=$this->translate('Client: Forum Consultants Ltd');?></p>
+            <p><?=$this->translate('Office interior design and fit out including welcome reception counter, exploring the nobleness of the wood and the company’s logo. Behind the scenes, an open space office.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("forum");
+        $gal->setImages(array(
+            "balcao_01","conjunto_02","entrada","esquico","layout"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('FLAG - Computer Learning Centre');?></p>
+            <p class="bold"><?=$this->translate('2004');?></p>
+            <p><?=$this->translate('Client: Private');?></p>
+            <p><?=$this->translate('Fit-out for a Learning Centre including new layout design and all bespoke furniture, as computer desks projectors for publicity and design boards.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("flag");
+        $gal->setImages(array(
+            "atrium-saldanha_pb","flag_todos","local_pq","p1010083","site_flag-mesa","site_flag-planta"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>
+

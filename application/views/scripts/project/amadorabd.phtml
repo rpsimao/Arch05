@@ -1,0 +1,21 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('XIV Amadora Internacional "BD" Festival');?></p>
+            <p class="bold"><?=$this->translate('2003');?></p>
+            <p><?=$this->translate('Client: CNBD, Amadora, Portugal');?></p>
+            <p><?=$this->translate('Exhibition design for the best Portuguese comic book of the year by José Carlos Fernandes 7x6 m (42 m2) Room The aim is to communicate the ambience of a jazz bar, creating a universe where time and space twisted to give the impression of physical discomfort. The process consisted of using an optic illusion on the floor and stretching the walls to stimulate the experience. Four chairs were also created, attributing to each character of the story one “impersonated” chair.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("amadora");
+        $gal->setImages(array(
+            "036_294","bd_amadora1","bd_amadora_294","bd_amadora_processo","oquiosque_utopia_294"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

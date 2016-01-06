@@ -1,0 +1,21 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Rogan Table');?></p>
+            <p class="bold"><?=$this->translate('2004');?></p>
+            <p><?=$this->translate('Client: private');?></p>
+            <p><?=$this->translate('The exercise was to build a table for two users, husband and wife, with diferent recomendations. He had a good collection of pens, and needed a big surface for he was aparently desorganized, and she needed a big space to store paper and simply drop on the drawers everything she wanted. The result was a composition of two tables, one inside the other, one male and one female... And yes! we tried the IFDA 2002 competition');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("mesarogan");
+        $gal->setImages(array(
+            "birch03.jpg","mesa_rogan_todos.jpg","mesa_rogan_todos2.jpg","pb270009_copy.jpg","site_mobiliario_mesa_rogan_canetas.jpg","site_mobiliario_mesa_rogan_geral.jpg","site_mobiliario_mesa_rogan_perps.jpg"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

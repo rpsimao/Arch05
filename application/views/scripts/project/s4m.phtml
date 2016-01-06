@@ -1,0 +1,22 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('S4M Skeletons for Mileuristas[Reusing one real estate legacy for a new target group]');?></p>
+            <p class="bold"><?=$this->translate('Location: Spain');?></p>
+            <p><?=$this->translate('Status: ongoing');?></p>
+            <p><?=$this->translate('Credits: Futurecycles');?></p>
+            <p><?=$this->translate('The impact of the Spanish crisis in the European Community is directly proportional to the size (10% of EU area) of the country. The Real Estate speculation left behind 1.2 million vacant legacies* and a demand for 760.000 social homes. These facts and figures are the engine of this research. Why is it necessary to build an additional 760.000 homes while there are 1.2 million already unoccupied standing? Although there is no money to finish these buildings, there is a shortage of affordable housing which could be filled by these vacant legacies. There is a need for urgent action to reuse the Skeletons* as potential structures before they fall into disrepair. They could become future homes for an unconsidered social group known as Mileuristas*, who would finally have access to an affordable dwelling.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("s4m");
+        $gal->setImages(array(
+            "1_diagram","2_central_questions","3_system","4_central_questions2"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Marina Restaurants, Coloane, Macau.');?></p>
+            <p class="bold"><?=$this->translate('2006');?></p>
+            <p><?=$this->translate('Status: project');?></p>
+            <p><?=$this->translate('Client: Private comission');?></p>
+            <p><?=$this->translate('5 restaurants. We decide to keep the idea of the place, the old ship yard of Coloane Island. On stilts we live within water.');?></p>
+            <?=$this->back();?>
+            <img src="/projects/restaurant/imagens/blankmap-world_small.png" alt="blankmap-world_smalll" width="250px" style="padding-top: 15px">
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("restaurant");
+        $gal->setImages(array(
+            "conjunto","desenho.png","localizacao"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

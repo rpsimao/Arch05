@@ -1,0 +1,21 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Design District Competition');?></p>
+            <p class="bold"><?=$this->translate('2004');?></p>
+            <p><?=$this->translate('Lisbon\'s river front');?></p>
+            <p><?=$this->translate('The project aims to redevelop an area of 40.500 sqm, formerly occupied by warehouses and factories that have long been obsolete. We propose to sustain the continuity of public squares, which characterize the Lisbon\'s river front, promoting the physical and visual contact with the river.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("alcantara");
+        $gal->setImages(array(
+            "9.jpg","alcado.png","conjunto.jpg","corte_01.png","corte_02.png","corte_geral.png","corte_habitacao.png","habitacao.jpg","planta.png","planta_lx.png","prespectiva.jpg","vista.jpg"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

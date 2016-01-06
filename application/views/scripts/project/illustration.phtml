@@ -1,0 +1,18 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p><?=$this->translate('Book illustrations for "Personagens para um lugar memorável", by Ana Francisco, Black Sun publishers, Lisbon, 2004');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("illustration");
+        $gal->setImages(array(
+            "capa01.jpg","carente01.jpg","colega01.jpg","gays01.jpg","giuseppe01.jpg","japonesa01.jpg","leonor01.jpg","lucas01.jpg","manuela01.jpg","mascaras01.jpg","mistico01.jpg","monarquicos01.jpg","narrador201.jpg","patrao01.jpg","poeta01.jpg","sardinha01.jpg","simoes01.jpg"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

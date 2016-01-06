@@ -1,0 +1,22 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Social Welfare Office building');?></p>
+            <p class="bold"><?=$this->translate('2005-2006');?></p>
+            <p><?=$this->translate('Status: project');?></p>
+            <p><?=$this->translate('Client: Macau\'s Social Welfare Department');?></p>
+            <p><?=$this->translate('The new facilities for Macau\'s Social Welfare Department - a 16 storey office building in a corner site of 483 sqm. The design approach - revisiting the neoclassical - was part of the client’s brief.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("building");
+        $gal->setImages(array(
+            "alcado","conjunto","esquina","foto_aerea","implantacao","plantas","promenor"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

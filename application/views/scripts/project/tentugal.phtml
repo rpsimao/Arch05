@@ -1,0 +1,22 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Afonso House');?></p>
+            <p class="bold"><?=$this->translate('2003-2011');?></p>
+            <p><?=$this->translate('Client: private');?></p>
+            <p><?=$this->translate('House in Tentúgal, Portugal');?></p>
+            <p><?=$this->translate('The ruin had to be demolished so the site could be seen in it\'s full potencial. A new house was built in the same place respecting the pre-existence and opened to the patio. Medieval windows were relocated, and a central heating system was added.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("tentugal");
+        $gal->setImages(array(
+            "site_habitacao_tentugal-cortes.png","site_habitacao_tentugal-cortes_2.png","site_habitacao_tentugal-model.png","site_habitacao_tentugal-plantas.png","site_habitacao_tentugal-pormenores","site_habitacao_tentugal-pormenores.png","t1","t2","t3","t4","t5","t6","t7","t8","t9","t10","t11","t12","t13"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

@@ -1,0 +1,24 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Torel Palace');?></p>
+            <p class="bold"><?=$this->translate('2012-2013');?></p>
+            <p><?=$this->translate('Client: Private');?></p>
+            <p><?=$this->translate('Status: finished');?></p>
+            <p><?=$this->translate('Total Refurbishment of a 19th Century Chalet designed by Architect César Janz and enlarged by Architect Norte Junior in 1936.
+Until 2012 the building suffered many uses, from family residence to journalism school. The work was the project and construction. This rehabilitation goal was to put back the original use and remove all marks from the others. Heating, plumbing, wiring, thermal insulation and drainage of the entire building and landscape, along with the conservation/restoration. The team consisted of 50 workers, from construction to conservation/restoration. The intervention principle was  the highest respect for the original building and the same ancient techniques of construction and decoration. .');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("torel");
+        $gal->setImages(array(
+            "_1_PB.JPG",
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>
+

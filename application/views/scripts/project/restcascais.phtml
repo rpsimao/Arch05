@@ -1,0 +1,22 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Porto de Cascais Restaurant');?></p>
+            <p class="bold"><?=$this->translate('2008');?></p>
+            <p><?=$this->translate('Client: Private');?></p>
+            <p><?=$this->translate('Status: Built');?></p>
+            <p><?=$this->translate('Referbishment of an old lingerie shop into a small tapas restaurant.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("rest_cascais");
+        $gal->setImages(array(
+            "1","7","11","local","planta_1","planta_2","planta_3"
+        ));
+        echo $gal->renderGallery();
+        ?>
+    </div>
+
+</div>

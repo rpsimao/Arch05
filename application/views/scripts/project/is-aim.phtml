@@ -1,0 +1,25 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Public Toilets – Macau International Airport');?></p>
+            <p class="bold"><?=$this->translate('2009');?></p>
+            <p><?=$this->translate('Client: CAM – Macau International Airport Company');?></p>
+            <p><?=$this->translate('Expansion and renovation of Macau international airport public toilets. A new image – reference to Macau\'s architectural and urban heritage.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("is_aim");
+        $gal->setImages(array(
+            "entrada","mapa","ideia","localizacao","cortes","entrada_01","lavatorio_01","urinois","lavatorio_02","conjunto"
+        ));
+        echo $gal->renderGallery();
+        ?>
+
+
+        
+    </div>
+
+</div>

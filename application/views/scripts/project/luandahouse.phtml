@@ -1,0 +1,25 @@
+<div class="container top-120">
+    <div class="row">
+        <div class="col-md-3 justify">
+            <p class="bold"><?=$this->translate('Luanda House, Angola');?></p>
+            <p class="bold"><?=$this->translate('2010');?></p>
+            <p><?=$this->translate('Competition: House in Luanda - Patio and Pavillion');?></p>
+            <p><?=$this->translate('The 30 years civil war accelerated the rural exodus to Luanda. The lack of infrastructures resulted in the invention of survival strategies. Angolan are resourceful, spending their day selling, buying and storing brick by brick. How to incorporate this reality in our design proposal? How to build a sustainable low budget house in a slum? The single house replication determines different neighbourhood blocks. We propose as house extension a frontage space that can be used for a small shop. This double front face is turned to the street working as a buffer for the house private sphere. The common spaces are central where the family gathers and parties. The patio walls are higher to assure the house cooling. All the materials are sourced locally. The tin roof is recyclable and collects rainwater for the garden and toilet.');?></p>
+            <?=$this->back();?>
+        </div>
+
+        <?php
+
+        $gal = new RPS_Aux_Gallery();
+        $gal->setdir("casa_em_luanda");
+        $gal->setImages(array(
+            "conceito_unit","2_all_map_rotate","3_repeticao_rua","4_groundplan_section","5_view_Street_shops","6_view_patio_kitchen","7_maquete"
+        ));
+        echo $gal->renderGallery();
+        ?>
+
+
+
+    </div>
+
+</div>
