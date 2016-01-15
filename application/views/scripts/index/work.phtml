@@ -2,45 +2,77 @@
 
     <div class="row">
         <div class="col-md-4">
-
-            <p class="bold"><?=$this->translate('project');?></p>
+         <p class="bold"><?=$this->translate('project');?></p>
             <p><?=$this->translate('project list');?></p>
-            <p class="bold"><?=$this->translate('public');?></p>
 
-            <ul class="ul-square">
-                <li><?=$this->translate('nossa sra da anunciação church');?></li>
-                <li><?=$this->translate('forum consultants ltd');?></li>
-                <li><?=$this->translate('olival basto comunity centre');?></li>
-                <li><?=$this->translate('industrial building in an entertainment building');?></li>
-                <li><?=$this->translate('macau international airport 11 public toilets');?></li>
-                <li><?=$this->translate('fire boat shelter');?></li>
-                <li><?=$this->translate('social welfare department office interior design');?></li>
-                <li><?=$this->translate('bivet veterinary clinic');?></li>
-                <li><?=$this->translate('marina restaurants');?></li>
-                <li><?=$this->translate('customs office façade design');?></li>
-                <li><?=$this->translate('social welfare department office building');?></li>
-                <li><?=$this->translate('cam office interior design and fit out');?></li>
-                <li><?=$this->translate('flag – computer learning centre');?></li>
-                <li><?=$this->translate('l.n.águas grundfos warehouse and offices');?></li>
-                <li><?=$this->translate('aveiro building, (dental clinic, retail unit and restaurant)');?></li>
-                <li><?=$this->translate('pedestrian bridge');?></li>
-                <li><?=$this->translate('castro verde playground');?></li>
-                <li><?=$this->translate('jacinto faleiro elderly centre');?></li>
-                <li><?=$this->translate('antónio prates foundation');?></li>
-                <li><?=$this->translate('silves, tavira quarteira e lagoa’s healthcentres');?></li>
-            </ul>
-            <p class="bold"><?=$this->translate('retail');?></p>
-            <ul class="ul-square">
-                <li><?=$this->translate('porto de abrigo restaurant');?></li>
+           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default" style="border:none;box-shadow:none;">
+                    <div class="" role="tab" id="heading1">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                           <p class="bold"><?=$this->translate('public');?></p>
+                        </a>
+                      
+                    </div>
+            <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingO1">
+              <div class="panel-body">
+                <ul class="ul-square">
+                        <li><?=$this->translate('nossa sra da anunciação church');?></li>
+                        <li><?=$this->translate('forum consultants ltd');?></li>
+                        <li><?=$this->translate('olival basto comunity centre');?></li>
+                        <li><?=$this->translate('industrial building in an entertainment building');?></li>
+                        <li><?=$this->translate('macau international airport 11 public toilets');?></li>
+                        <li><?=$this->translate('fire boat shelter');?></li>
+                        <li><?=$this->translate('social welfare department office interior design');?></li>
+                        <li><?=$this->translate('bivet veterinary clinic');?></li>
+                        <li><?=$this->translate('marina restaurants');?></li>
+                        <li><?=$this->translate('customs office façade design');?></li>
+                        <li><?=$this->translate('social welfare department office building');?></li>
+                        <li><?=$this->translate('cam office interior design and fit out');?></li>
+                        <li><?=$this->translate('flag – computer learning centre');?></li>
+                        <li><?=$this->translate('l.n.águas grundfos warehouse and offices');?></li>
+                        <li><?=$this->translate('aveiro building, (dental clinic, retail unit and restaurant)');?></li>
+                        <li><?=$this->translate('pedestrian bridge');?></li>
+                        <li><?=$this->translate('castro verde playground');?></li>
+                        <li><?=$this->translate('jacinto faleiro elderly centre');?></li>
+                        <li><?=$this->translate('antónio prates foundation');?></li>
+                        <li><?=$this->translate('silves, tavira quarteira e lagoa’s healthcentres');?></li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+
+                <div class="panel panel-default" style="border:none;box-shadow:none;">
+                    <div class="" role="tab" id="heading2">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                           <p class="bold"><?=$this->translate('retail');?></p>
+                        </a>
+                      
+                    </div>
+            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+              <div class="panel-body">
+                <ul class="ul-square">
+                        <li><?=$this->translate('porto de abrigo restaurant');?></li>
                 <li><?=$this->translate('adega restaurant');?></li>
                 <li><?=$this->translate('tutti sensi shop');?></li>
                 <li><?=$this->translate('gourmet café – oficina do gosto');?></li>
                 <li><?=$this->translate('5 decoration shops for michele k');?></li>
                 <li><?=$this->translate('jeweller’s shop');?></li>
                 <li><?=$this->translate('tuxa hairdresser');?></li>
-            </ul>
-            <p class="bold"><?=$this->translate('residential');?></p>
-            <ul class="ul-square">
+                    </ul>
+              </div>
+            </div>
+          </div>
+
+                <div class="panel panel-default" style="border:none;box-shadow:none;">
+                    <div class="" role="tab" id="heading3">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                           <p class="bold"><?=$this->translate('residential');?></p>
+                        </a>
+                      
+                    </div>
+            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body">
+                <ul class="ul-square">
                 <li><?=$this->translate('dr. raposo house');?></li>
                 <li><?=$this->translate('plátanos condominium');?></li>
                 <li><?=$this->translate('pero boi house');?></li>
@@ -62,9 +94,22 @@
                 <li><?=$this->translate('ruraltur');?></li>
                 <li><?=$this->translate('pires guerra house');?></li>
                 <li><?=$this->translate('three model houses');?></li>
-            </ul>
-            <p class="bold"><?=$this->translate('competitions');?></p>
-            <ul class="ul-square">
+                    </ul>
+              </div>
+            </div>
+          </div>
+
+
+                <div class="panel panel-default" style="border:none;box-shadow:none;">
+                    <div class="" role="tab" id="heading4">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                           <p class="bold"><?=$this->translate('competitions');?></p>
+                        </a>
+                      
+                    </div>
+            <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+              <div class="panel-body">
+                <ul class="ul-square">
                 <li><?=$this->translate('vimeiro golf hotel refurbishment competition');?></li>
                 <li><?=$this->translate('luanda house - patio and pavillion competition');?></li>
                 <li><?=$this->translate('car park');?></li>
@@ -75,30 +120,73 @@
                 <li><?=$this->translate('ifda competition');?></li>
                 <li><?=$this->translate('rio maior bus terminal');?></li>
                 <li><?=$this->translate('expresso/sojornal building');?></li>
-            </ul>
-            <p class="bold"><?=$this->translate('consultancy');?></p>
-            <ul class="ul-square">
+                    </ul>
+              </div>
+            </div>
+          </div>
+
+
+                <div class="panel panel-default" style="border:none;box-shadow:none;">
+                    <div class="" role="tab" id="heading5">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                           <p class="bold"><?=$this->translate('consultancy');?></p>
+                        </a>
+                      
+                    </div>
+            <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+              <div class="panel-body">
+                <ul class="ul-square">
                 <li><?=$this->translate('house construction viability - monchique');?></li>
                 <li><?=$this->translate('house construction viability - manique');?></li>
                 <li><?=$this->translate('commercial complex renovation from residential buildings');?></li>
                 <li><?=$this->translate('housing fisability study - lote d');?></li>
                 <li><?=$this->translate('gemini comercial centre refurbishment');?></li>
                 <li><?=$this->translate('jfs fachade color scheme');?></li>
-            </ul>
-            <p class="bold"><?=$this->translate('masterplan');?></p>
-            <ul class="ul-square">
+                    </ul>
+              </div>
+            </div>
+          </div>
+
+
+                <div class="panel panel-default" style="border:none;box-shadow:none;">
+                    <div class="" role="tab" id="heading6">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                           <p class="bold"><?=$this->translate('masterplan');?></p>
+                        </a>
+                      
+                    </div>
+            <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+              <div class="panel-body">
+                <ul class="ul-square">
                 <li><?=$this->translate('lubango master plan, for cns - angola');?></li>
                 <li><?=$this->translate('alto dos espalhatos, azores');?></li>
                 <li><?=$this->translate('quinta da nascente, rio maior');?></li>
-            </ul>
-            <p class="bold"><?=$this->translate('masterplan');?></p>
-            <ul class="ul-square">
-                <li><?=$this->translate('“best 2003 portuguese comics” set, in the xiv internacional festival of comics in amadora (fibda)');?></li>
-                <li><?=$this->translate('children’s scenic space in the xv internacional festival of comics in amadora');?></li>
-                <li><?=$this->translate('two sets in the xviii internacional festival of comics in amadora');?></li>
-            </ul>
+                    </ul>
+              </div>
+            </div>
+          </div>
 
-        </div>
+          
+                <div class="panel panel-default" style="border:none;box-shadow:none;">
+                    <div class="" role="tab" id="heading7">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                           <p class="bold"><?=$this->translate('set design');?></p>
+                        </a>
+                      
+                    </div>
+            <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+              <div class="panel-body">
+                <ul class="ul-square">
+                    <li><?=$this->translate('“best 2003 portuguese comics” set, in the xiv internacional festival of comics in amadora (fibda)');?></li>
+                    <li><?=$this->translate('children’s scenic space in the xv internacional festival of comics in amadora');?></li>
+                    <li><?=$this->translate('two sets in the xviii internacional festival of comics in amadora');?></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+</div>
+    </div>
         <div class="col-lg-5">
             <img src="/projects/projects/imagens/cloud.jpg" alt="cloud" />
         </div>
