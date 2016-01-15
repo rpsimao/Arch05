@@ -3,30 +3,18 @@
 class IndexController extends Zend_Controller_Action
 {
 
-    public function init()
-    {
-        /* Initialize action controller here */
-    }
+    public function init(){}
 
-    public function indexAction()
-    {
-
-    }
-
-
+    public function indexAction(){}
 
     public function whoweareAction(){}
 
-
     public function contactsAction(){}
-
 
     public function whatwedoAction(){}
 
     public function workAction(){}
 
-
-
+    public function serviceAction(){}
 
 }
-
